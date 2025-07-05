@@ -10,13 +10,10 @@ public class Test {
     public static void main(String[] args) {
         SjfApplicationContext applicationContext = new SjfApplicationContext(AppConfig.class);
 
-//        UserService userService = (UserService) applicationContext.getBean("userService");
+        UserInterface userService = (UserInterface) applicationContext.getBean("userService");
+        userService.test();
 
-
-        System.out.println(applicationContext.getBean("userService"));
-        System.out.println(applicationContext.getBean("userService"));
-        System.out.println(applicationContext.getBean("userService"));
-        System.out.println(applicationContext.getBean("userService"));
+//        System.out.println(applicationContext.getBean("userService"));
 
 
     }

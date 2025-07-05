@@ -1,2 +1,6 @@
-package com.sjf.service;public enum UserInterface {
+package com.sjf.service;
+
+public interface UserInterface {
+
+    void test();
 }

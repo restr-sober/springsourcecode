@@ -3,8 +3,8 @@ package com.sjf.spring;
 /**
  * @author shijunfeng
  */
-public interface BeanNameAware {
+public interface InitializingBean {
 
-    void setBeanName(String beanName);
+    void afterPropertiesSet();
 
 }
